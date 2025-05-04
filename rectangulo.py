@@ -15,3 +15,8 @@ class Rectangle:
 
     def perimetro(self):
         return (self.xmax-self.xmin)*2 + (self.ymax - self.ymin)*2
+
+    def centro(self):
+        xcentro = (self.xmax - self.xmin)/2
+        ycentro = (self.ymax - self.ymin)/2
+        return(xcentro, ycentro)
