@@ -12,3 +12,6 @@ class Rectangle:
     
     def area(self):
         return (self.xmax - self.xmin)*(self.ymax - self.ymin)
+
+    def perimetro(self):
+        return (self.xmax-self.xmin)*2 + (self.ymax - self.ymin)*2
