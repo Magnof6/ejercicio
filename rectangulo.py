@@ -9,3 +9,6 @@ class Rectangle:
         self.ymin = ymin
         self.xmax = xmax
         self.ymax = ymax
+    
+    def area(self):
+        return (self.xmax - self.xmin)*(self.ymax - self.ymin)
