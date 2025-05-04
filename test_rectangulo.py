@@ -23,6 +23,9 @@ class Test_Rectangle(unittest.TestCase):
         rect = Rectangle(0,0,10,20)
         self.assertEqual(rect.perimetro(),60)
 
+    def test_centro(self):
+        rect = Rectangle(0,0,10,10)
+        self.assertEqual(rect.centro(),(5,5))
 
 
 
