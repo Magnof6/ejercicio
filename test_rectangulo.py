@@ -1,5 +1,5 @@
 import unittest
-from rectangle import Rectangle
+from rectangulo import Rectangle
 
 class Test_Rectangle(unittest.TestCase):
     def test_creation_valid(self):
@@ -7,4 +7,4 @@ class Test_Rectangle(unittest.TestCase):
         self.assertEqual(rectan.xmin,0)
         self.assertEqual(rectan.ymin,0)
         self.assertEqual(rectan.xmax,10)
-        self.assertEqual(rect.ymax,10)
+        self.assertEqual(rectan.ymax,10)
