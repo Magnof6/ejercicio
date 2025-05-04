@@ -1,3 +1,5 @@
+import math
+
 class Rectangle:
     def __init__(self,xmin,ymin,xmax,ymax):
         if xmin >= xmax:
@@ -20,3 +22,10 @@ class Rectangle:
         xcentro = (self.xmax - self.xmin)/2
         ycentro = (self.ymax - self.ymin)/2
         return(xcentro, ycentro)
+    
+    def diagonal(self):
+        return math.sqrt((self.xmax - self.xmin)**2 + (self.ymax - self.ymin)**2)
+
+
+
+
