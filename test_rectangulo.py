@@ -14,3 +14,31 @@ class Test_Rectangle(unittest.TestCase):
             Rectangle(10,0,0,10) # xmin > xmax --> debe fallar
         with self.assertRaises(ValueError):
             Rectangle(0,10,0,10) #ymin > ymax --> debe fallar
+    
+    def test_area(self):
+        rect = Rectangle(0,0,10,10)
+        self.assertEqual(rect.area(),100)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
