@@ -26,6 +26,12 @@ class Rectangle:
     def diagonal(self):
         return math.sqrt((self.xmax - self.xmin)**2 + (self.ymax - self.ymin)**2)
 
+    
+    def overlaps(self,other):
+        #Si no hay superposición en X o Y entones no hay superposicion 
+        no_overlap_x = (self.xmax <= other.xmin) or (other.xmax <= self.xmin)
+        no_overlap_y = (self.ymax <= other.ymin) or (other.ymax <= self.ymin)
 
+        return not (no_overlap_x or no_overlap_y)
 
 
