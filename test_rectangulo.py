@@ -18,6 +18,10 @@ class Test_Rectangle(unittest.TestCase):
     def test_area(self):
         rect = Rectangle(0,0,10,10)
         self.assertEqual(rect.area(),100)
+    
+    def test_perimetro(self):
+        rect = Rectangle(0,0,10,20)
+        self.assertEqual(rect.perimetro(),60)
 
 
 
